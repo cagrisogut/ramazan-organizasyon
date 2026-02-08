@@ -17,12 +17,12 @@ export default function Home() {
         <div className="w-full max-w-7xl mx-auto px-4 mb-8">
           <div className="flex items-center justify-between">
             {/* Logo - Top Left */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full blur-xl opacity-25 group-hover:opacity-45 transition-opacity rounded-full" />
+            <div className="relative group w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-amber-500 blur-xl opacity-25 group-hover:opacity-45 transition-opacity" />
               <img
                 src="/images/logo.svg"
                 alt="GNŞ Logo"
-                className="relative w-20 h-20 md:w-24 md:h-24 drop-shadow-[0_0_20px_rgba(251,191,36,0.5)] hover:scale-105 transition-transform rounded-full"
+                className="relative w-full h-full object-cover drop-shadow-[0_0_20px_rgba(251,191,36,0.5)] hover:scale-105 transition-transform"
               />
             </div>
 

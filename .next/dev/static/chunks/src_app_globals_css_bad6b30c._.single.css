@@ -1904,6 +1904,10 @@
     background-repeat: repeat;
   }
 
+  .object-cover {
+    object-fit: cover;
+  }
+
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
