@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ramadan-dark: #0f172a;
+  --color-ramadan-purple: #2e1065;
+  --color-ramadan-gold: #fbbf24;
+  --color-ramadan-accent: #d97706;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+}
+
+body {
+  background: radial-gradient(circle at top, #2e1065, #0f172a);
+  color: var(--foreground);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 4px;
+}

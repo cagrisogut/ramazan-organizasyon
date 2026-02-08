@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sunburst Rays -->
+  <g stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round">
+    <!-- Generate multiple rays with different lengths and angles -->
+    <line x1="250" y1="130" x2="250" y2="50" transform="rotate(0 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(10 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="40" transform="rotate(20 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="60" transform="rotate(30 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="30" transform="rotate(40 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(50 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="45" transform="rotate(60 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="75" transform="rotate(70 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="35" transform="rotate(80 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="65" transform="rotate(90 250 250)" />
+    
+    <!-- Pattern repeated for 360 degrees -->
+    <line x1="250" y1="130" x2="250" y2="50" transform="rotate(100 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(110 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="40" transform="rotate(120 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="60" transform="rotate(130 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="30" transform="rotate(140 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(150 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="45" transform="rotate(160 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="75" transform="rotate(170 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="35" transform="rotate(180 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="65" transform="rotate(190 250 250)" />
+
+    <line x1="250" y1="130" x2="250" y2="50" transform="rotate(200 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(210 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="40" transform="rotate(220 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="60" transform="rotate(230 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="30" transform="rotate(240 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(250 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="45" transform="rotate(260 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="75" transform="rotate(270 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="35" transform="rotate(280 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="65" transform="rotate(290 250 250)" />
+
+    <line x1="250" y1="130" x2="250" y2="50" transform="rotate(300 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(310 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="40" transform="rotate(320 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="60" transform="rotate(330 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="30" transform="rotate(340 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="70" transform="rotate(350 250 250)" />
+    <line x1="250" y1="130" x2="250" y2="45" transform="rotate(360 250 250)" />
+  </g>
+
+  <!-- Central Circle -->
+  <circle cx="250" cy="250" r="120" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+  
+  <!-- Texts -->
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Cinzel', serif" font-size="100" fill="url(#goldGrad)" style="text-shadow: 0px 0px 10px rgba(251, 191, 36, 0.3);">GNŞ</text>
+  <text x="50%" y="65%" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#fbbf24" letter-spacing="4" font-weight="light">ORGANIZATION</text>
+</svg>
