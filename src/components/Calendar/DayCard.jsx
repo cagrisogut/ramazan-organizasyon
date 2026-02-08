@@ -31,7 +31,7 @@ export default function DayCard({ dayData, onClick }) {
                     {dayData.highlights.slice(0, 2).map((h, i) => (
                         <div key={i} className="flex items-start gap-2">
                             <span className="text-xs font-mono text-amber-300 font-bold mt-0.5">{h.time}</span>
-                            <span className="text-xs text-amber-50 leading-tight line-clamp-2">{h.event}</span>
+                            <span className="text-xs text-amber-50 leading-tight">{h.event}</span>
                         </div>
                     ))}
                     {dayData.highlights.length > 2 && (
@@ -47,8 +47,8 @@ export default function DayCard({ dayData, onClick }) {
         <GlassCard
             onClick={onClick}
             className={`cursor-pointer group h-full flex flex-col justify-between p-4 transition-all duration-300 ${isKadirs
-                    ? "bg-gradient-to-br from-purple-500/20 to-indigo-500/10 border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
-                    : "bg-gradient-to-b from-white/5 to-white/0 hover:shadow-ramadan-gold/20 hover:border-ramadan-gold/30"
+                ? "bg-gradient-to-br from-purple-500/20 to-indigo-500/10 border-purple-500/40 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]"
+                : "bg-gradient-to-b from-white/5 to-white/0 hover:shadow-ramadan-gold/20 hover:border-ramadan-gold/30"
                 }`}
         >
             {/* Header */}
