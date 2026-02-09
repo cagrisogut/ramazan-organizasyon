@@ -149,59 +149,61 @@ export default function EventModal({ dayData, isOpen, onClose }) {
                                             <p className="text-amber-200 text-sm">Tüm etkinlikler şehir merkezindeki ana alanda gerçekleşecektir</p>
                                         </div>
 
-                                        {/* Sabah Programı */}
-                                        <section className="p-5 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-xl border border-amber-400/30">
-                                            <h4 className="text-amber-300 font-cinzel text-xl mb-4 flex items-center gap-2">
-                                                <Sun size={20} /> Sabah Programı
-                                            </h4>
-                                            <div className="space-y-3">
-                                                {dayData.bayramSchedule.morning.map((item, idx) => (
-                                                    <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-amber-400">
-                                                        <div className="flex items-baseline gap-3 mb-2">
-                                                            <Clock size={16} className="text-amber-300 shrink-0 mt-1" />
-                                                            <span className="text-amber-200 font-mono text-sm font-bold">{item.time}</span>
+                                        <div className="space-y-6 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                                            {/* Sabah Programı */}
+                                            <section className="p-5 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-xl border border-amber-400/30">
+                                                <h4 className="text-amber-300 font-cinzel text-xl mb-4 flex items-center gap-2">
+                                                    <Sun size={20} /> Sabah Programı
+                                                </h4>
+                                                <div className="space-y-3">
+                                                    {dayData.bayramSchedule.morning.map((item, idx) => (
+                                                        <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-amber-400">
+                                                            <div className="flex items-baseline gap-3 mb-2">
+                                                                <Clock size={16} className="text-amber-300 shrink-0 mt-1" />
+                                                                <span className="text-amber-200 font-mono text-sm font-bold">{item.time}</span>
+                                                            </div>
+                                                            <p className="text-white font-medium ml-7">{item.event}</p>
                                                         </div>
-                                                        <p className="text-white font-medium ml-7">{item.event}</p>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </section>
+                                                    ))}
+                                                </div>
+                                            </section>
 
-                                        {/* Gündüz Programı */}
-                                        <section className="p-5 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-xl border border-orange-400/30">
-                                            <h4 className="text-orange-300 font-cinzel text-xl mb-4 flex items-center gap-2">
-                                                <Sun size={20} /> Gündüz Programı
-                                            </h4>
-                                            <div className="space-y-3">
-                                                {dayData.bayramSchedule.daytime.map((item, idx) => (
-                                                    <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-orange-400">
-                                                        <div className="flex items-baseline gap-3 mb-2">
-                                                            <Clock size={16} className="text-orange-300 shrink-0 mt-1" />
-                                                            <span className="text-orange-200 font-mono text-sm font-bold">{item.time}</span>
+                                            {/* Gündüz Programı */}
+                                            <section className="p-5 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-xl border border-orange-400/30">
+                                                <h4 className="text-orange-300 font-cinzel text-xl mb-4 flex items-center gap-2">
+                                                    <Sun size={20} /> Gündüz Programı
+                                                </h4>
+                                                <div className="space-y-3">
+                                                    {dayData.bayramSchedule.daytime.map((item, idx) => (
+                                                        <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-orange-400">
+                                                            <div className="flex items-baseline gap-3 mb-2">
+                                                                <Clock size={16} className="text-orange-300 shrink-0 mt-1" />
+                                                                <span className="text-orange-200 font-mono text-sm font-bold">{item.time}</span>
+                                                            </div>
+                                                            <p className="text-white font-medium ml-7">{item.event}</p>
                                                         </div>
-                                                        <p className="text-white font-medium ml-7">{item.event}</p>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </section>
+                                                    ))}
+                                                </div>
+                                            </section>
 
-                                        {/* Akşam Programı */}
-                                        <section className="p-5 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/30">
-                                            <h4 className="text-purple-300 font-cinzel text-xl mb-4 flex items-center gap-2">
-                                                <Sunset size={20} /> Akşam Programı (20:00 - 24:00)
-                                            </h4>
-                                            <div className="space-y-3">
-                                                {dayData.bayramSchedule.evening.map((item, idx) => (
-                                                    <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-purple-400">
-                                                        <div className="flex items-baseline gap-3 mb-2">
-                                                            <Clock size={16} className="text-purple-300 shrink-0 mt-1" />
-                                                            <span className="text-purple-200 font-mono text-sm font-bold">{item.time}</span>
+                                            {/* Akşam Programı */}
+                                            <section className="p-5 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-xl border border-purple-400/30">
+                                                <h4 className="text-purple-300 font-cinzel text-xl mb-4 flex items-center gap-2">
+                                                    <Sunset size={20} /> Akşam Programı (20:00 - 24:00)
+                                                </h4>
+                                                <div className="space-y-3">
+                                                    {dayData.bayramSchedule.evening.map((item, idx) => (
+                                                        <div key={idx} className="bg-white/5 p-4 rounded-lg border-l-4 border-purple-400">
+                                                            <div className="flex items-baseline gap-3 mb-2">
+                                                                <Clock size={16} className="text-purple-300 shrink-0 mt-1" />
+                                                                <span className="text-purple-200 font-mono text-sm font-bold">{item.time}</span>
+                                                            </div>
+                                                            <p className="text-white font-medium ml-7">{item.event}</p>
                                                         </div>
-                                                        <p className="text-white font-medium ml-7">{item.event}</p>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </section>
+                                                    ))}
+                                                </div>
+                                            </section>
+                                        </div>
                                     </div>
                                 ) : (
                                     <>
