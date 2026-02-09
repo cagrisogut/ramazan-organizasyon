@@ -103,10 +103,10 @@ function Home() {
                             className: "flex items-center justify-between",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative group",
+                                    className: "relative group rounded-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full blur-xl opacity-25 group-hover:opacity-45 transition-opacity rounded-full"
+                                            className: "absolute inset-0 bg-gradient-to-r from-purple-500 to-amber-500 rounded-full blur-xl opacity-25 group-hover:opacity-45 transition-opacity"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/page.js",
                                             lineNumber: 21,
@@ -115,7 +115,7 @@ function Home() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                             src: "/images/logo.svg",
                                             alt: "GNŞ Logo",
-                                            className: "relative w-20 h-20 md:w-24 md:h-24 drop-shadow-[0_0_20px_rgba(251,191,36,0.5)] hover:scale-105 transition-transform rounded-full"
+                                            className: "relative w-20 h-20 md:w-24 md:h-24 drop-shadow-[0_0_20px_rgba(251,191,36,0.5)] group-hover:scale-105 transition-transform rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/page.js",
                                             lineNumber: 22,
